@@ -14,9 +14,9 @@
 
 
 <ion-content>
-  <img id="foto2" src="" />
-  <div id="extra-fotos">
-
+  <img src={{todo2.foto}} />
+  <div *ngFor="let foto of todo2.fotos">
+    <img [src]="foto.url" />
   </div>
 </ion-content>
 

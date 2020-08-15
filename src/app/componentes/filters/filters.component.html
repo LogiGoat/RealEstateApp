@@ -1,96 +1,68 @@
 <ion-content>
-    <ion-searchbar placeholder="Find your dream house"></ion-searchbar>
+  
+  <ion-item lines="none">
+      <ion-label>
+        Se Vende
+      </ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>
+        Se Renta
+      </ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>
+        Vendidas Recientemente
+      </ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
     
-    <ion-list lines="none">
+    <ion-item lines="none">
+      <ion-label>Precio</ion-label>
+      <ion-range min={-200} max={200}></ion-range>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>Tipo de Inmueble</ion-label>
+      <ion-select placeholder="Seleccionar">
+        <ion-select-option>Casa</ion-select-option>
+        <ion-select-option>Apartamento</ion-select-option>
+        <ion-select-option>Lotificación</ion-select-option>
+        <ion-select-option>Familia Compartida</ion-select-option>M
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>Habitaciones</ion-label>
+      <ion-range min={-200} max={200}></ion-range>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>Baños</ion-label>
+      <ion-range min={-200} max={200}></ion-range>
+    </ion-item>
+    
+    <ion-item lines="none">
+        <ion-label>Año</ion-label>
+        <ion-select placeholder="Seleccionar">
+          <ion-select-option>Casa</ion-select-option>
+          <ion-select-option>Apartamento</ion-select-option>
+          <ion-select-option>Lotificación</ion-select-option>
+          <ion-select-option>Familia Compartida</ion-select-option>M
+        </ion-select>
+    </ion-item>
+
+    <ion-list>
       <ion-list-header>
-        Real Estate
-      </ion-list-header>
-    </ion-list>
-
-    <ion-list lines="none">
-      <ion-list-header>
-        Account
-      </ion-list-header>
-
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-          <ion-icon slot="start" name="person"></ion-icon>
-          <ion-label>
-            Account
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-          <ion-icon slot="start" name="help"></ion-icon>
-          <ion-label>
-            Support
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-
-      <ion-menu-toggle autoHide="false">
-        <ion-item button detail="false">
-          <ion-icon slot="start" name="log-out"></ion-icon>
-          <ion-label>
-            Logout
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-
-    </ion-list>
-
-    <ion-list lines="none">
-      <ion-list-header>
-        Account
+        Palabras Clave
       </ion-list-header>
 
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-          <ion-icon slot="start" name="log-in"></ion-icon>
-          <ion-label>
-            Login
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-          <ion-icon slot="start" name="help"></ion-icon>
-          <ion-label>
-            Support
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-
-      <ion-menu-toggle autoHide="false">
-        <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-          <ion-icon slot="start" name="person-add"></ion-icon>
-          <ion-label>
-            Signup
-          </ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-
-      <ion-item>
-        <ion-icon slot="start" name="moon-outline"></ion-icon>
-        <ion-label>
-          Dark Mode
-        </ion-label>
-        <ion-toggle [(ngModel)]="dark"></ion-toggle>
-      </ion-item>
-    </ion-list>
-
-    <ion-list lines="none">
-      <ion-list-header>
-        Tutorial
-      </ion-list-header>
-      <ion-menu-toggle autoHide="false">
-        <ion-item button detail="false">
-          <ion-icon slot="start" name="hammer"></ion-icon>
-          <ion-label>Show Tutorial</ion-label>
-        </ion-item>
-      </ion-menu-toggle>
-    </ion-list>
+    <ion-item lines="none">
+        <ion-input style="border:groove" placeholder="Jardín, parque, etc."></ion-input>
+    </ion-item>
+  </ion-list>
   </ion-content>

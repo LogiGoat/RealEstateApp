@@ -11,9 +11,9 @@ export class InfoCompletaComponent implements OnInit {
   @Input() todo2:any;
   constructor( private modalCtrl:ModalController) { }
   ngOnInit() {
-    document.getElementById("foto2").setAttribute("src",this.todo2["url-foto-principal"]);
-
-    let numeroFotos = this.todo2["url-fotos"].length;
+    //document.getElementById("foto2").setAttribute("src",this.todo2["url-foto-principal"]);
+/*
+    let numeroFotos = this.todo2["fotos"].length;
 
     for(let i = 0; i < numeroFotos; i++){
       let img = document.createElement('img');
@@ -21,6 +21,8 @@ export class InfoCompletaComponent implements OnInit {
       document.getElementById('extra-fotos').appendChild(img);
     }
 
+    */
+    //console.log(this.todo2);
   }
 
   cerrar(){
