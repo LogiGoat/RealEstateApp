@@ -3,6 +3,7 @@ import { DOCUMENT} from '@angular/common';
 import { environment } from './../../environments/environment';
 import { ModalController } from '@ionic/angular';
 import { DetalleGeneralComponent } from './../componentes/detalle-general/detalle-general.component';
+import { FiltersComponent } from '../componentes/filters/filters.component';
 
 @Component({
   selector: 'app-home',
@@ -51,12 +52,13 @@ export class HomePage implements AfterViewInit{
         {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
       ],
       "precio":"$500,000",
-      "precioK":"300K"
+      "precioK":"500K"
     }
   ];
 
   constructor( 
-    @Inject(DOCUMENT) private doc: Document,
+    @Inject(DOCUMENT) 
+    private doc: Document,
     private modalController:ModalController
   ) {  }
 
@@ -97,7 +99,7 @@ export class HomePage implements AfterViewInit{
             label: 
             {
               text:markerData.precioK,
-              fontSize:'10px',
+              fontSize:'9px',
               fontWeight:'bolder'
             }
 
@@ -161,7 +163,16 @@ export class HomePage implements AfterViewInit{
       component: DetalleGeneralComponent,
       componentProps: {
         'todo': info
-      }
+      },
+      cssClass:'modal1'
+    });
+    return await modal.present();
+  }
+
+  async mostrarModalFilters() {
+    const modal = await this.modalController.create({
+      component: FiltersComponent,
+      cssClass:'filter-modal'
     });
     return await modal.present();
   }

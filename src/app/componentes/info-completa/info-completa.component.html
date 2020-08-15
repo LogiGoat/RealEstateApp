@@ -15,14 +15,16 @@
 
 <ion-content>
   <img id="foto2" src="" />
-  <div id="extra-fotos">
-
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let img of todo2.url-fotos" >
+      <img [src]=[img.url] />
+    </ion-item>
+  </ion-list>
 </ion-content>
 
 
 
-<ion-footer style="opacity:1; background-color: white;">
+<ion-footer on-swipe-up="onSwipeUp()" style="opacity:1; background-color: white;">
   <br>
   <ion-card>
     <ion-card-header>
