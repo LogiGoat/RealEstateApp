@@ -30,6 +30,10 @@
 }
 
 .filter-modal .modal-wrapper{
-    --max-width: 70%;
-     
+    --max-width: 75%;
+    position :absolute;
+    left:25%;
+    right:0;
+    height:100%;
+    transition: width 2s;
 }
