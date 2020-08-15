@@ -1,0 +1,41 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"> 
+      <ion-button (click)="cerrar();">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-fab horizontal="end" vertical="top">
+      <ion-fab-button size="small"><ion-icon class="fab-icon" name="heart"></ion-icon></ion-fab-button>
+    </ion-fab>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <img id="foto2" src="" />
+  <div id="extra-fotos">
+
+  </div>
+</ion-content>
+
+
+
+<ion-footer style="opacity:1; background-color: white;">
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{todo2.precio}}</ion-card-title>
+      <ion-card-subtitle>{{todo2.direccion}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+  <div class="contact-buttons-div">
+    <ion-button class="contact-button"> Llamar</ion-button>
+    <ion-button class="contact-button">Enviar Mensaje</ion-button>
+  </div>
+  <br>
+</ion-footer>
