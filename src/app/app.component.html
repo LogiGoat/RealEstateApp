@@ -3,24 +3,24 @@
 
     <ion-menu contentId="main-content">
       <ion-content>
-        <ion-searchbar id="filter-search-bar" placeholder="Find your dream house"></ion-searchbar>
+        <!--- <ion-searchbar id="filter-search-bar" placeholder="Find your dream house"></ion-searchbar> --->
         
         <ion-list lines="none">
-          <ion-list-header>
+          <ion-list-header id="main-title">
             Real Estate
           </ion-list-header>
         </ion-list>
 
         <ion-list lines="none">
           <ion-list-header>
-            Account
+            Cuenta
           </ion-list-header>
 
           <ion-menu-toggle autoHide="false">
             <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
               <ion-icon slot="start" name="person"></ion-icon>
               <ion-label>
-                Account
+                Mi Perfil
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
@@ -29,25 +29,7 @@
             <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
               <ion-icon slot="start" name="log-in"></ion-icon>
               <ion-label>
-                Login
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-
-          <ion-menu-toggle autoHide="false">
-            <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-              <ion-icon slot="start" name="help"></ion-icon>
-              <ion-label>
-                Support
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-
-          <ion-menu-toggle autoHide="false">
-            <ion-item button detail="false">
-              <ion-icon slot="start" name="log-out"></ion-icon>
-              <ion-label>
-                Logout
+                Iniciar sesión
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
@@ -56,25 +38,45 @@
 
         <ion-list lines="none">
           <ion-list-header>
-            Account
+            Mis actividades
           </ion-list-header>
 
           <ion-menu-toggle autoHide="false">
             <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
-              <ion-icon slot="start" name="person-add"></ion-icon>
+              <ion-icon slot="start" name="home-outline"></ion-icon>
               <ion-label>
-                Signup
+                Mis propiedades
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
 
-          <ion-item>
-            <ion-icon slot="start" name="moon-outline"></ion-icon>
-            <ion-label>
-              Dark Mode
-            </ion-label>
-            <ion-toggle [(ngModel)]="dark"></ion-toggle>
-          </ion-item>
+          <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="archive-outline"></ion-icon>
+              <ion-label>
+                Mis Solicitudes
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="calculator-outline"></ion-icon>
+              <ion-label>
+                Calculadora ganancias
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="calculator-outline"></ion-icon>
+              <ion-label>
+                Calculadora costos
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
         </ion-list>
 
         <ion-list lines="none">
@@ -84,9 +86,36 @@
           <ion-menu-toggle autoHide="false">
             <ion-item button detail="false">
               <ion-icon slot="start" name="hammer"></ion-icon>
-              <ion-label>Show Tutorial</ion-label>
+              <ion-label>Mostrar Tutorial</ion-label>
             </ion-item>
           </ion-menu-toggle>
+
+          <ion-item>
+            <ion-icon slot="start" name="moon-outline"></ion-icon>
+            <ion-label>
+              Modo Oscuro
+            </ion-label>
+            <ion-toggle [(ngModel)]="dark"></ion-toggle>
+          </ion-item>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item routerLink="/home" routerLinkActive="active" routerDirection="root" detail="false">
+              <ion-icon slot="start" name="help"></ion-icon>
+              <ion-label>
+                Soporte
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle autoHide="false">
+            <ion-item button detail="false">
+              <ion-icon slot="start" name="log-out"></ion-icon>
+              <ion-label>
+                Cerrar sesión
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
         </ion-list>
       </ion-content>
     </ion-menu>

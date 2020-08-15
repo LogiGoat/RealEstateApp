@@ -32,6 +32,15 @@ export class DetalleGeneralComponent implements OnInit {
     return await modal.present();
   }
 
-
-
+  like(){
+    console.log("like");
+    let elem = document.querySelector('ion-fab-button');
+    let color = elem.style.getPropertyValue('--background');
+    if(color == 'transparent'){
+      elem.style.setProperty('--background', 'red');
+    }
+    else{
+      elem.style.setProperty('--background', 'transparent');
+    }
+  }
 }
