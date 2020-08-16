@@ -34,13 +34,17 @@ export class DetalleGeneralComponent implements OnInit {
 
   like(){
     console.log("like");
-    let elem = document.querySelector('ion-fab-button');
-    let color = elem.style.getPropertyValue('--background');
-    if(color == 'transparent'){
-      elem.style.setProperty('--background', 'red');
+    let elem = document.querySelectorAll(".like-button") as NodeListOf<HTMLElement>;
+
+    for(let i = 0; i < elem.length; i++){
+      let color = elem[i].style.getPropertyValue('--background');
+      if(color == 'transparent'){
+        elem[i].style.setProperty('--background', 'red');
+      }
+      else{
+        elem[i].style.setProperty('--background', 'transparent');
+      }
     }
-    else{
-      elem.style.setProperty('--background', 'transparent');
-    }
+
   }
 }
