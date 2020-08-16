@@ -32,4 +32,18 @@ export class InfoCompletaComponent implements OnInit {
 
   }
 
+  like(){
+    let elem = document.querySelectorAll(".like-button") as NodeListOf<HTMLElement>;
+
+    for(let i = 0; i < elem.length; i++){
+      let color = elem[i].style.getPropertyValue('--background');
+      if(color == 'transparent'){
+        elem[i].style.setProperty('--background', 'red');
+      }
+      else{
+        elem[i].style.setProperty('--background', 'transparent');
+      }
+    }
+  }
+
 }

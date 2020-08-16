@@ -1,18 +1,8 @@
+
 ion-button{
     --background:white;
     --color:black;
     --box-shadow:none;
   }
-  ion-fab-button{
-    --background:transparent;
-    --background-activated:transparent;
-    --background-focused:transparent;
-    --color:black;
-    --color-activated:red;
-    --box-shadow:none;
-    margin-right:10px;
-}
+  
 
-ion-header ion-toolbar:first-of-type {
-  padding-top: 15px;
-}

@@ -84,4 +84,16 @@ export class ListaPage implements OnInit {
       setTimeout(() => {event.target.complete()},1000)
   }
   
+
+  like(elem : any){
+
+    let color = elem.style.getPropertyValue('--background');
+      if(color == 'transparent'){
+        elem.style.setProperty('--background', 'red');
+      }
+      else{
+        elem.style.setProperty('--background', 'transparent');
+      }
+  }
+
 }
