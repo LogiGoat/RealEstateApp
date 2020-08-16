@@ -80,5 +80,8 @@ export class ListaPage implements OnInit {
     return await modal.present();
   }
 
-
+  doRefresh(event) {
+      setTimeout(() => {event.target.complete()},1000)
+  }
+  
 }

@@ -12,3 +12,7 @@ ion-button{
     --box-shadow:none;
     margin-right:10px;
 }
+
+ion-header ion-toolbar:first-of-type {
+  padding-top: 15px;
+}

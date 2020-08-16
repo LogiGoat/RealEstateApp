@@ -14,6 +14,4 @@ export class FiltersComponent implements OnInit {
       'dismissed': true
     });
   }
-
-
 }

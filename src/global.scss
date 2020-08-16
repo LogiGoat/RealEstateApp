@@ -27,12 +27,10 @@
 
 .modal1 .modal-wrapper{
     background: transparent !important;
+    --box-shadow:none;
 }
 
 .filter-modal .modal-wrapper{
-    --max-width: 75%;
-    position :absolute;
-    left:25%;
-    right:0;
-    height:100%;
+    --background:transparent;
+    --box-shadow:none;
 }
