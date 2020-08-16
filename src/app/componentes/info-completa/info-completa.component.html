@@ -1,42 +1,35 @@
 
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start"> 
-      <ion-button (click)="cerrar();">
-        <ion-icon slot="icon-only" name="close"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-
 <ion-content>
-  <img src={{todo2.foto}} />
-  <div *ngFor="let foto of todo2.fotos">
-    <img [src]="foto.url" />
-  </div>
+
+  <ion-fab horizontal="start" vertical="top">
+    <ion-fab-button class="close-button" (click)="cerrar()" size="small" style="margin: 0;"><ion-icon name="close-outline"></ion-icon></ion-fab-button>
+  </ion-fab>
 
   <ion-fab horizontal="end" vertical="top">
     <ion-fab-button class="like-button" (click)="like()" size="small" style="margin: 0;"><ion-icon name="heart-outline"></ion-icon></ion-fab-button>
   </ion-fab>
+
+
+  <img (click)="mostrarModalSlides(todo2)" src={{todo2.foto}} />
+  <div (click)="mostrarModalSlides(todo2)" *ngFor="let foto of todo2.fotos">
+    <img [src]="foto.url" />
+  </div>
+
+
 </ion-content>
 
 
 
-<ion-footer color="light" style="opacity:1;">
-  <br>
-  <ion-card>
+<ion-footer class="info-card-footer" color="light" style="opacity:1;">
+  <ion-card (click)="mostrarModalFeaturesText(todo2)">
     <ion-card-header>
       <ion-card-title>{{todo2.precio}}</ion-card-title>
       <ion-card-subtitle>{{todo2.direccion}}</ion-card-subtitle>
     </ion-card-header>
-    <ion-card-content>
-      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
-    </ion-card-content>
   </ion-card>
   <div class="contact-buttons-div">
     <ion-button fill="outline" class="contact-button"> Llamar</ion-button>
     <ion-button fill="outline" class="contact-button">Enviar Mensaje</ion-button>
+    <ion-button color="primary" class="contact-button">Tour</ion-button>
   </div>
-  <br>
 </ion-footer>

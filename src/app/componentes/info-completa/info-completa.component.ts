@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { FotoSlidesComponent } from '../foto-slides/foto-slides.component';
+import { FeaturesTextComponent } from '../features-text/features-text.component';
 
 @Component({
   selector: 'app-info-completa',
@@ -8,7 +10,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class InfoCompletaComponent implements OnInit {
   @Input() todo2:any;
-  constructor( private modalCtrl:ModalController) { }
+  constructor( private modalController:ModalController) { }
   ngOnInit() {
     //document.getElementById("foto2").setAttribute("src",this.todo2["url-foto-principal"]);
 /*
@@ -26,7 +28,7 @@ export class InfoCompletaComponent implements OnInit {
 
   cerrar(){
 
-    this.modalCtrl.dismiss({
+    this.modalController.dismiss({
       'dismissed': true
     });
 
@@ -44,6 +46,27 @@ export class InfoCompletaComponent implements OnInit {
         elem[i].style.setProperty('--background', 'transparent');
       }
     }
+  }
+
+  async mostrarModalSlides(info:any) {
+    const modal = await this.modalController.create({
+      component: FotoSlidesComponent,
+      componentProps: {
+        'allfotos': info
+      }
+    });
+    return await modal.present();
+  }
+
+  async mostrarModalFeaturesText(info:any) {
+    const modal = await this.modalController.create({
+      component: FeaturesTextComponent,
+      componentProps: {
+        'info': info
+      },
+      cssClass:'features-modal'
+    });
+    return await modal.present();
   }
 
 }

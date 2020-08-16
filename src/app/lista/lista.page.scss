@@ -3,7 +3,8 @@ ion-header ion-toolbar:first-of-type {
 }
 
 ion-button{
-    --background:transparent;
-    --color:black;
-    --box-shadow:none;
-  }
+  --background:white;
+  --color:black;
+  --box-shadow:none;
+  margin: 0;
+}

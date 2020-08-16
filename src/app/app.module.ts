@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -12,9 +12,11 @@ import { DetalleGeneralComponent } from './componentes/detalle-general/detalle-g
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FiltersComponent } from './componentes/filters/filters.component';
+import { FotoSlidesComponent } from './componentes/foto-slides/foto-slides.component';
 
 @NgModule({
-  declarations: [AppComponent,DetalleGeneralComponent,InfoCompletaComponent],
+  declarations: [AppComponent,DetalleGeneralComponent,InfoCompletaComponent,FiltersComponent,FotoSlidesComponent],
   entryComponents: [DetalleGeneralComponent,InfoCompletaComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [

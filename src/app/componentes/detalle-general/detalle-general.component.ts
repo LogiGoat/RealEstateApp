@@ -10,9 +10,7 @@ import { InfoCompletaComponent } from './../info-completa/info-completa.componen
 export class DetalleGeneralComponent implements OnInit {
   @Input() todo: any;
   constructor( private modalController:ModalController) { }
-  ngOnInit() {
-    //document.getElementById("foto").setAttribute("src",this.todo["url-foto-principal"]);
-  }
+  ngOnInit() { }
 
   cerrar(){
 
@@ -45,6 +43,6 @@ export class DetalleGeneralComponent implements OnInit {
         elem[i].style.setProperty('--background', 'transparent');
       }
     }
-
   }
+  
 }
