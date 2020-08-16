@@ -15,8 +15,8 @@ export class HomePage implements AfterViewInit{
   puntos = [
     {
       "name": "Sonsonate",
-      "lat": 13.6984177,
-      "lng": -89.2223759,
+      "lat": 13.714975,
+      "lng": -89.4739356,
       "foto":"https://i.pinimg.com/originals/59/8f/4f/598f4ff8ecbd39365ba659845551e28b.jpg",
       "direccion":"Col Angélica 16 Av Nte No 1-7A, Sonsonate",
       "fotos":[
@@ -28,8 +28,8 @@ export class HomePage implements AfterViewInit{
     },
     {
       "name": "San Salvador",
-      "lat": 13.8423378,
-      "lng": -88.8587223,
+      "lat": 13.701632,
+      "lng": -89.213674,
       "foto":"https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       "direccion":"Col Centro América Cl San Antonio Abad No 1921, San Salvador",
       "fotos":[
@@ -42,8 +42,8 @@ export class HomePage implements AfterViewInit{
     },
     {
       "name": "San Miguel",
-      "lat": 13.636342,
-      "lng": -88.787075,
+      "lat": 13.460504,
+      "lng": -88.176101,
       "foto":"https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       "direccion":"Bo El Calvario 2 Av Sur No 402-A Ent 7 Y 5 Cl Ote, San Miguel",
       "fotos":[
@@ -53,6 +53,104 @@ export class HomePage implements AfterViewInit{
       ],
       "precio":"$500,000",
       "precioK":"500K"
+    },
+    {
+      "name": "Escalon",
+      "lat": 13.701874,
+      "lng": -88.249495,
+      "foto":"https://images.pexels.com/photos/2599868/pexels-photo-2599868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "direccion":"Col Y Ps Gral Escalón No 5338, San Salvador",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$650,000",
+      "precioK":"650K"
+    },
+    {
+      "name": "Berlín",
+      "lat": 13.496880,
+      "lng": -88.530069,
+      "foto":"https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "direccion":"Bo San José 4 Av Sur, Usulutan",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$90,000",
+      "precioK":"90K"
+    },
+    {
+      "name": "Santa Ana",
+      "lat": 13.990156,
+      "lng": -89.555203,
+      "foto":"https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "direccion":"Bo San Rafael 3 Cl Ote No 44 Ent 11 Y 13 Av Sur,Santa Ana",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$130,000",
+      "precioK":"130K"
+    },
+    {
+      "name": "San Juan Nonualco",
+      "lat": 13.503390,
+      "lng": -88.897212,
+      "foto":"https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "direccion":" Col San Juan Prol 2 Av Sur, San Juan Nonualco, La Paz",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$230,000",
+      "precioK":"230K"
+    },
+    {
+      "name": "Mejicanos",
+      "lat": 13.733829,
+      "lng": -89.215725,
+      "foto":"https://images.pexels.com/photos/323772/pexels-photo-323772.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "direccion":"Urb Metrópolis C C Metrópolis Loc 57 Mejic",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$740,000",
+      "precioK":"740K"
+    },
+    {
+      "name": "Flor Blanca",
+      "lat": 13.696734,
+      "lng": -89.213084,
+      "foto":"https://images.pexels.com/photos/259751/pexels-photo-259751.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "direccion":"Col Flor Blanca 6/10 Cl Pte Y 27 Av Sur No 1435, San Salvador",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$185,000",
+      "precioK":"185K"
+    },
+    {
+      "name": "Apopa",
+      "lat": 13.726737,
+      "lng": -89.172672,
+      "foto":"https://images.pexels.com/photos/462205/pexels-photo-462205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "direccion":" Rpto Apopa Cl Las Palmas No 8-B Apopa, Apopa",
+      "fotos":[
+        {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+        {"url":"https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+      ],
+      "precio":"$263,000",
+      "precioK":"263K"
     }
   ];
 
@@ -65,7 +163,8 @@ export class HomePage implements AfterViewInit{
   async ngAfterViewInit(){
     const appEl = this.doc.querySelector('ion-app');
     let map:any;
-
+    var markers = [];
+    var i;
     const googleMaps = await getGoogleMaps( environment.apiKeyMaps );
     const mapEle = this.mapElement.nativeElement;
 
@@ -85,6 +184,16 @@ export class HomePage implements AfterViewInit{
         mapEle.classList.add('show-map');
       }
     );
+    
+    googleMaps.event.addListener(
+      map,
+      'zoom_changed',
+      () => {
+      var zoom = map.getZoom();
+      for (i = 0; i < 10; i++) {
+        markers[i].setVisible(zoom >= 10);
+      }
+      });
 
     this.puntos.forEach(
       (markerData: any) => {
@@ -101,60 +210,19 @@ export class HomePage implements AfterViewInit{
               text:markerData.precioK,
               fontSize:'9px',
               fontWeight:'bolder'
-            }
-
+            },
+            visible: false
           }
         );
+        markers.push(marker);
         marker.addListener(
           'click', 
           () =>{
-            //infoWindow.open(map, marker);
             this.mostrarModal1(markerData);
-          }
-        );
-      }
-    );
-    /*
-    googleMaps.event.addListener(
-      map, 
-      'click', 
-      function(event){
-        const lat = event.latLng.lat();
-        const lng = event.latLng.lng();
-        console.log(`Latitud: ${lat}`);
-        console.log(`Longitud: ${lng} `);
-        const marker = new googleMaps.Marker(
-          {
-            position: {
-                "lat": lat,
-                "lng": lng
-              },
-            map,
-            title: "Marcador de click"
-          }
-        );
-      }
-    );
-
-    const observer = new MutationObserver(
-      (mutations) => {
-        mutations.forEach((mutation) => {
-          if (mutation.attributeName === 'class') {
-            const el = mutation.target as HTMLElement;
-            if (map) {
-              map.setOptions({styles: []});
             }
-          }
-        });
+        );
       }
     );
-    observer.observe(
-      appEl, 
-      {
-        attributes: true
-      }
-    );
-  */
   }
   
 

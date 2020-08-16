@@ -13,10 +13,10 @@ export class DetalleGeneralComponent implements OnInit {
   ngOnInit() { }
 
   cerrar(){
-
     this.modalController.dismiss({
       'dismissed': true
     });
+    
 
   }
 
@@ -44,5 +44,7 @@ export class DetalleGeneralComponent implements OnInit {
       }
     }
   }
+
+
   
 }
