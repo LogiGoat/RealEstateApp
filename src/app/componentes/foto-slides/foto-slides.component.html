@@ -8,7 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngIf="viewEntered">
   <ion-slides pager="true">
     <ion-slide >
       <ion-img src={{allfotos.foto}}></ion-img>

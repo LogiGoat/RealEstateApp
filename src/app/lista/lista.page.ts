@@ -57,7 +57,7 @@ export class ListaPage implements OnInit {
       "name": "Escalon",
       "lat": 13.701874,
       "lng": -88.249495,
-      "foto":"https://images.pexels.com/photos/2599868/pexels-photo-2599868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "foto":"https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "direccion":"Col Y Ps Gral Escalón No 5338, San Salvador",
       "fotos":[
         {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
@@ -141,7 +141,7 @@ export class ListaPage implements OnInit {
       "name": "Apopa",
       "lat": 13.726737,
       "lng": -89.172672,
-      "foto":"https://images.pexels.com/photos/462205/pexels-photo-462205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "foto":"https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
       "direccion":" Rpto Apopa Cl Las Palmas No 8-B Apopa, Apopa",
       "fotos":[
         {"url":"https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},

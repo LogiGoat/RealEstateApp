@@ -8,6 +8,7 @@ import { InfoCompletaComponent } from './../info-completa/info-completa.componen
   styleUrls: ['./detalle-general.component.scss'],
 })
 export class DetalleGeneralComponent implements OnInit {
+  viewEntered = false;
   @Input() todo: any;
   constructor( private modalController:ModalController) { }
   ngOnInit() { }
@@ -16,8 +17,9 @@ export class DetalleGeneralComponent implements OnInit {
     this.modalController.dismiss({
       'dismissed': true
     });
-    
-
+  }
+  ionViewDidEnter() {
+    this.viewEntered = true;
   }
 
   async mostrarModal2() {
