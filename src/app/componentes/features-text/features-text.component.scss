@@ -5,7 +5,9 @@
     max-height:calc(100% - 60px);
     bottom:0px;
 }
-
+.features-list{
+    margin-bottom: 80px;
+}
 .contact-button{
     width: 33%;
 }
@@ -16,13 +18,13 @@ ion-button{
 
 .contact-buttons-div{
     display:flex;
+    margin-top:5;
     margin-bottom:15px;
 }
 
 ion-footer {
     position: fixed;
-    margin-top: 2%;
-    height: 50; 
+    margin-top: 2%; 
     width: 100%;
     bottom: 0;
 }

@@ -14,9 +14,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FiltersComponent } from './componentes/filters/filters.component';
 import { FotoSlidesComponent } from './componentes/foto-slides/foto-slides.component';
+import { FeaturesTextComponent } from './componentes/features-text/features-text.component';
 
 @NgModule({
-  declarations: [AppComponent,DetalleGeneralComponent,InfoCompletaComponent,FiltersComponent,FotoSlidesComponent],
+  declarations: [AppComponent,DetalleGeneralComponent,InfoCompletaComponent,FiltersComponent,FotoSlidesComponent,FeaturesTextComponent],
   entryComponents: [DetalleGeneralComponent,InfoCompletaComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [

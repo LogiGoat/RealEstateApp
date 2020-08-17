@@ -1,6 +1,6 @@
 import { Component, ElementRef, Inject, ViewChild, AfterViewInit } from '@angular/core';
 import { DOCUMENT} from '@angular/common';
-import { environment } from './../../environments/environment';
+import { environment } from './../../environments/environment.prod';
 import { ModalController } from '@ionic/angular';
 import { DetalleGeneralComponent } from './../componentes/detalle-general/detalle-general.component';
 import { FiltersComponent } from '../componentes/filters/filters.component';
