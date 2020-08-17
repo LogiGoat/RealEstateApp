@@ -181,6 +181,12 @@ export class ListaPage implements OnInit {
       setTimeout(() => {event.target.complete()},1000)
   }
   
+  loadData(event) {
+    setTimeout(() => {
+      event.target.complete();
+    }, 2000);
+  }
+  
 
   like(elem : any){
 
@@ -193,12 +199,7 @@ export class ListaPage implements OnInit {
       }
   }
 
-  loadData(event) {
-    setTimeout(() => {
-      console.log('Done');
-      event.target.complete();
-    }, 2000);
-  }
+
 
 }
 

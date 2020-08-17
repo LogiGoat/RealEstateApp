@@ -23,7 +23,7 @@
     <ion-item *ngFor = "let info of puntos">
       <ion-card (click)="mostrarModal2(info);">
 
-        <ion-img [src]="info.foto"></ion-img>
+        <img [src]="info.foto"/>
 
         <ion-card-header>
           <ion-card-title>{{info.precio}}</ion-card-title>

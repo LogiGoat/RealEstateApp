@@ -5,3 +5,28 @@
     max-height:calc(100% - 60px);
     bottom:0px;
 }
+
+.contact-button{
+    width: 33%;
+}
+
+ion-button{
+    --border-radius:5px;
+}
+
+.contact-buttons-div{
+    display:flex;
+    margin-bottom:15px;
+}
+
+ion-footer {
+    position: fixed;
+    margin-top: 2%;
+    height: 50; 
+    width: 100%;
+    bottom: 0;
+}
+
+ion-card{
+    margin:0px;
+}
